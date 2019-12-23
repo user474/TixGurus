@@ -1,0 +1,139 @@
+/* Color palette used */
+:root
+{
+	--white: #FAFAFA;
+	--blue: #00AEE0;
+	--green: #0EA529;
+	--red: #B14056;
+	--black: #1F1520;
+	--grey97: #f7f7f7;
+}
+
+
+
+/* CSS Reset */
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:  Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+html
+{
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+body
+{
+	/* Custom white color theme */
+	background-color: var(--grey97);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------------------------ Home Page -------------------------------*/
+
+/* Background video */
+#bg-video
+{
+	position: relative;
+	background-color: black;
+	height: 85vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+}
+
+#bg-video video
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#bg-video .container
+{
+	position: relative;
+	z-index: 2;
+}
+
+#bg-video .overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.3;
+	z-index: 1;
+}
+
+
+/* Card shadow */
+.card:hover
+{
+	transform: scale(1.02);
+	transition: transform 0.2s;
+}
+
+.card-img-top:hover
+{
+	transform: scale(1.05);
+	transition: transform 0.2s ease-in-out;
+}
+
+.card
+{
+	overflow: hidden;
+}
+
+/* Back to top button */
+#backToTopButton
+{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	padding: 5px 15px;
+	border-radius: 5px;
+	font-size: 18px;
+  }
+
+  #backToTopButton:hover {
+	background-color: limegreen;
+  }
+
+
+
+
+
+footer
+{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	height: 80px;
+}
+
+
+.height-fix
+{
+	min-height: 70vh;
+}
