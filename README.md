@@ -3,7 +3,7 @@
 This guide is for administrators and staff members using the TixGurus website to manage events.
 
 ### Login
-Start by logging in using the adminsitrator account:
+Start by logging in using the administrator account:
 1. Click on the **Login/Join** button in the top right corner of the navigation bar.
 1. Click on **Staff Login** button
 1. Enter the following username and password and click **Login**:
